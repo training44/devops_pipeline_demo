@@ -12,7 +12,7 @@ RUN java -version
 
 # Expose the ports we're interested in
 EXPOSE 8080 9990 9090
-RUN chmod +x /standalone.sh
+RUN chmod +x /opt/wildfly/bin/standalone.sh
 USER root
 # Set the default command to run on boot
 # This will boot WildFly in the standalone mode and bind to all interface
