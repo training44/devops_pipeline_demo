@@ -2,10 +2,10 @@ FROM servergurus/ubuntu-jdk8
 MAINTAINER Prasanjit Singh <nixgurus@gmail.com>
 
 # setup WildFly 
-cp wildfly-8.2.0.Final /opt/wildfly
+COPY wildfly-8.2.0.Final /opt/wildfly
 
 # install example app on wildfy
-cp wildfly-spring-boot-sample-1.0.0.war /opt/wildfly/standalone/deployments/
+COPY wildfly-spring-boot-sample-1.0.0.war /opt/wildfly/standalone/deployments/
 
 RUN java -version
 
